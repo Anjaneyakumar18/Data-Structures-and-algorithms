@@ -1,8 +1,15 @@
+mostly deals with array and string problems 
+
+
 For all the problems whose brute force is O(n**2) and the Brute Force algo is like
-for i in 0 to n{
-    for j in o to i{
+
+
+for i=0 to n{          #ith loop
+    for j=0 to i{      #jth loop
         statements
     }
 }
+
+
 ->the internal loop(j-th loop) is dependent on the itarative variable of external loop (i-th loop)
   then you can use stack to get optimal solution
