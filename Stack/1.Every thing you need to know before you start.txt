@@ -1,3 +1,11 @@
+learn oops basics mainly (class,objects,constructors,instance members,stactic members ....)
+
+Learn stcak fundamentals
+push()
+pop()
+top()
+isEmpty()
+
 mostly deals with array and string problems 
 
 
