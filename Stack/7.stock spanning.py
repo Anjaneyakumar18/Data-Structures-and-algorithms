@@ -25,3 +25,26 @@ def stock_spaning(arr:list[int])->list[int]:
     return nearest_max
     
 print(stock_spaning([10,8,3,7,8,10,1,4]))
+
+
+
+
+
+#lc 901
+
+
+class StockSpanner:
+    def __init__(self):
+        self.stack = []
+        self.i = 0
+
+    def next(self, price: int) -> int:
+        while self.stack and self.stack[-1][0] <= price:
+            self.stack.pop()
+        if not self.stack:
+            span = self.i + 1
+        else:
+            span = self.i - self.stack[-1][1]
+        self.stack.append((price, self.i))
+        self.i += 1
+        return span
